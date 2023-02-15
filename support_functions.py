@@ -13,6 +13,6 @@ def choose_option(request, ok):
   option = input('{}'.format(request))
   while ok(option) == False:
       print('No ha introducido una opción válida')
-      option = input('Introdúzcalo de nuevo')
+      option = input('Introdúzcalo de nuevo: ')
 
   return option
